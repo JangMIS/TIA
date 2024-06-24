@@ -1,0 +1,1037 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V16" />
+  <DocumentInfo>
+    <Created>2024-06-24T15:42:27.5574986Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v4">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="FB_Conveyor_Entry" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_Weight" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_WheelSorter_Instance" Datatype="&quot;FB_WheelSorter&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="photoeyeEntry" Datatype="Bool" /><Member Name="photoeyeLeft" Datatype="Bool" /><Member Name="photoeyeRight" Datatype="Bool" /><Member Name="photoeyeStraight" Datatype="Bool" /><Member Name="machineReady" Datatype="Bool" /></Section><Section Name="Output"><Member Name="beltConveyorLeft" Datatype="Bool" /><Member Name="beltConveyorRight" Datatype="Bool" /><Member Name="beltConveyorStraight" Datatype="Bool" /><Member Name="wheelSorterRight" Datatype="Bool" /><Member Name="wheelSorterStraight" Datatype="Bool" /><Member Name="wheelSorterLeft" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /><Member Name="heavyLoad" Datatype="Bool" /><Member Name="lightLoad" Datatype="Bool" /><Member Name="mediumLoad" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..20] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_Left" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_Straight" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_Right" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_PickAndPlace_Instance" Datatype="&quot;FB_PickAndPlace&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machineReady" Datatype="Bool" /><Member Name="movingZ" Datatype="Bool" /><Member Name="movingX" Datatype="Bool" /><Member Name="itemGrabbed" Datatype="Bool" /></Section><Section Name="Output"><Member Name="moveX" Datatype="Bool" /><Member Name="moveZ" Datatype="Bool" /><Member Name="grabItem" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..20] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_4belt" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_Main</Name>
+      <Number>2</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Retroreflective Sensor 1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_IO" />
+        <Component Name="System_running" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Belt Conveyor (2m) 3" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="24" />
+    <Part Name="Not" UId="25" />
+    <Call UId="26">
+      <CallInfo Name="FB_Conveyor" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="27">
+          <Component Name="FB_Conveyor_Entry" />
+        </Instance>
+        <Parameter Name="machine ready" Section="Input" Type="Bool" />
+        <Parameter Name="photoeye" Section="Input" Type="Bool" />
+        <Parameter Name="forward" Section="Output" Type="Bool" />
+        <Parameter Name="counter" Section="Output" Type="Int" />
+        <Parameter Name="start" Section="InOut" Type="Bool" />
+        <Parameter Name="done" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="26" Name="en" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="photoeye" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="machine ready" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="28" />
+      <NameCon UId="26" Name="start" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="29" />
+      <NameCon UId="26" Name="done" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="26" Name="forward" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="26" Name="counter" />
+      <OpenCon UId="30" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Diffuse Sensor 0" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_IO" />
+        <Component Name="System_running" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Conveyor Scale 0 (+)" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="24" />
+    <Part Name="Not" UId="25" />
+    <Call UId="26">
+      <CallInfo Name="FB_Conveyor" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="27">
+          <Component Name="FB_Conveyor_Weight" />
+        </Instance>
+        <Parameter Name="machine ready" Section="Input" Type="Bool" />
+        <Parameter Name="photoeye" Section="Input" Type="Bool" />
+        <Parameter Name="forward" Section="Output" Type="Bool" />
+        <Parameter Name="counter" Section="Output" Type="Int" />
+        <Parameter Name="start" Section="InOut" Type="Bool" />
+        <Parameter Name="done" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="26" Name="en" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="photoeye" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="machine ready" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="28" />
+      <NameCon UId="26" Name="start" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="29" />
+      <NameCon UId="26" Name="done" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="26" Name="forward" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="26" Name="counter" />
+      <OpenCon UId="30" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Retroreflective Sensor 0" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_IO" />
+        <Component Name="System_running" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Belt Conveyor (4m) 0" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="24" />
+    <Part Name="Not" UId="25" />
+    <Call UId="26">
+      <CallInfo Name="FB_Conveyor" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="27">
+          <Component Name="FB_Conveyor_4belt" />
+        </Instance>
+        <Parameter Name="machine ready" Section="Input" Type="Bool" />
+        <Parameter Name="photoeye" Section="Input" Type="Bool" />
+        <Parameter Name="forward" Section="Output" Type="Bool" />
+        <Parameter Name="counter" Section="Output" Type="Int" />
+        <Parameter Name="start" Section="InOut" Type="Bool" />
+        <Parameter Name="done" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="26" Name="en" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="photoeye" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="machine ready" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="28" />
+      <NameCon UId="26" Name="start" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="29" />
+      <NameCon UId="26" Name="done" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="26" Name="forward" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="26" Name="counter" />
+      <OpenCon UId="30" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Diffuse Sensor 0" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Diffuse Sensor 1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Diffuse Sensor 2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Diffuse Sensor 3" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_IO" />
+        <Component Name="System_running" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Main" />
+        <Component Name="FB_Conveyor_Left" />
+        <Component Name="start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Main" />
+        <Component Name="FB_Conveyor_Right" />
+        <Component Name="start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Main" />
+        <Component Name="FB_Conveyor_Straight" />
+        <Component Name="start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Pop Up Wheel Sorter 0 (Right)" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Pop Up Wheel Sorter 0 (+)" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Pop Up Wheel Sorter 0 (Left)" />
+      </Symbol>
+    </Access>
+    <Call UId="32">
+      <CallInfo Name="FB_WheelSorter" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="33">
+          <Component Name="FB_WheelSorter_Instance" />
+        </Instance>
+        <Parameter Name="photoeyeEntry" Section="Input" Type="Bool" />
+        <Parameter Name="photoeyeLeft" Section="Input" Type="Bool" />
+        <Parameter Name="photoeyeRight" Section="Input" Type="Bool" />
+        <Parameter Name="photoeyeStraight" Section="Input" Type="Bool" />
+        <Parameter Name="machineReady" Section="Input" Type="Bool" />
+        <Parameter Name="beltConveyorLeft" Section="Output" Type="Bool" />
+        <Parameter Name="beltConveyorRight" Section="Output" Type="Bool" />
+        <Parameter Name="beltConveyorStraight" Section="Output" Type="Bool" />
+        <Parameter Name="wheelSorterRight" Section="Output" Type="Bool" />
+        <Parameter Name="wheelSorterStraight" Section="Output" Type="Bool" />
+        <Parameter Name="wheelSorterLeft" Section="Output" Type="Bool" />
+        <Parameter Name="start" Section="InOut" Type="Bool" />
+        <Parameter Name="done" Section="InOut" Type="Bool" />
+        <Parameter Name="heavyLoad" Section="InOut" Type="Bool" />
+        <Parameter Name="lightLoad" Section="InOut" Type="Bool" />
+        <Parameter Name="mediumLoad" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="32" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="32" Name="photoeyeEntry" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="32" Name="photoeyeLeft" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="32" Name="photoeyeRight" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="photoeyeStraight" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="32" Name="machineReady" />
+    </Wire>
+    <Wire UId="45">
+      <OpenCon UId="34" />
+      <NameCon UId="32" Name="start" />
+    </Wire>
+    <Wire UId="46">
+      <OpenCon UId="35" />
+      <NameCon UId="32" Name="done" />
+    </Wire>
+    <Wire UId="47">
+      <OpenCon UId="36" />
+      <NameCon UId="32" Name="heavyLoad" />
+    </Wire>
+    <Wire UId="48">
+      <OpenCon UId="37" />
+      <NameCon UId="32" Name="lightLoad" />
+    </Wire>
+    <Wire UId="49">
+      <OpenCon UId="38" />
+      <NameCon UId="32" Name="mediumLoad" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="32" Name="beltConveyorLeft" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="32" Name="beltConveyorRight" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="32" Name="beltConveyorStraight" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="32" Name="wheelSorterRight" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="32" Name="wheelSorterStraight" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="32" Name="wheelSorterLeft" />
+      <IdentCon UId="31" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Diffuse Sensor 4" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_IO" />
+        <Component Name="System_running" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Belt Conveyor (2m) 0" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="24" />
+    <Part Name="Not" UId="25" />
+    <Call UId="26">
+      <CallInfo Name="FB_Conveyor" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="27">
+          <Component Name="FB_Conveyor_Left" />
+        </Instance>
+        <Parameter Name="machine ready" Section="Input" Type="Bool" />
+        <Parameter Name="photoeye" Section="Input" Type="Bool" />
+        <Parameter Name="forward" Section="Output" Type="Bool" />
+        <Parameter Name="counter" Section="Output" Type="Int" />
+        <Parameter Name="start" Section="InOut" Type="Bool" />
+        <Parameter Name="done" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="26" Name="en" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="photoeye" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="machine ready" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="28" />
+      <NameCon UId="26" Name="start" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="29" />
+      <NameCon UId="26" Name="done" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="26" Name="forward" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="26" Name="counter" />
+      <OpenCon UId="30" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Diffuse Sensor 6" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_IO" />
+        <Component Name="System_running" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Belt Conveyor (2m) 1" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="24" />
+    <Part Name="Not" UId="25" />
+    <Call UId="26">
+      <CallInfo Name="FB_Conveyor" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="27">
+          <Component Name="FB_Conveyor_Straight" />
+        </Instance>
+        <Parameter Name="machine ready" Section="Input" Type="Bool" />
+        <Parameter Name="photoeye" Section="Input" Type="Bool" />
+        <Parameter Name="forward" Section="Output" Type="Bool" />
+        <Parameter Name="counter" Section="Output" Type="Int" />
+        <Parameter Name="start" Section="InOut" Type="Bool" />
+        <Parameter Name="done" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="26" Name="en" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="photoeye" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="machine ready" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="28" />
+      <NameCon UId="26" Name="start" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="29" />
+      <NameCon UId="26" Name="done" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="26" Name="forward" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="26" Name="counter" />
+      <OpenCon UId="30" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Diffuse Sensor 5" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_IO" />
+        <Component Name="System_running" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Belt Conveyor (2m) 2" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="24" />
+    <Part Name="Not" UId="25" />
+    <Call UId="26">
+      <CallInfo Name="FB_Conveyor" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="27">
+          <Component Name="FB_Conveyor_Right" />
+        </Instance>
+        <Parameter Name="machine ready" Section="Input" Type="Bool" />
+        <Parameter Name="photoeye" Section="Input" Type="Bool" />
+        <Parameter Name="forward" Section="Output" Type="Bool" />
+        <Parameter Name="counter" Section="Output" Type="Int" />
+        <Parameter Name="start" Section="InOut" Type="Bool" />
+        <Parameter Name="done" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="26" Name="en" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="photoeye" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="machine ready" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="28" />
+      <NameCon UId="26" Name="start" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="29" />
+      <NameCon UId="26" Name="done" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="26" Name="forward" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="26" Name="counter" />
+      <OpenCon UId="30" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_IO" />
+        <Component Name="System_running" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Two-Axis Pick &amp; Place 0 (Moving Z)" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Two-Axis Pick &amp; Place 0 (Moving X)" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Two-Axis Pick &amp; Place 0 (Detected)" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Two-Axis Pick &amp; Place 0 X" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Two-Axis Pick &amp; Place 0 Z" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Two-Axis Pick &amp; Place 0 (Grab)" />
+      </Symbol>
+    </Access>
+    <Call UId="28">
+      <CallInfo Name="FB_PickAndPlace" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="29">
+          <Component Name="FB_PickAndPlace_Instance" />
+        </Instance>
+        <Parameter Name="machineReady" Section="Input" Type="Bool" />
+        <Parameter Name="movingZ" Section="Input" Type="Bool" />
+        <Parameter Name="movingX" Section="Input" Type="Bool" />
+        <Parameter Name="itemGrabbed" Section="Input" Type="Bool" />
+        <Parameter Name="moveX" Section="Output" Type="Bool" />
+        <Parameter Name="moveZ" Section="Output" Type="Bool" />
+        <Parameter Name="grabItem" Section="Output" Type="Bool" />
+        <Parameter Name="start" Section="InOut" Type="Bool" />
+        <Parameter Name="done" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="32">
+      <Powerrail />
+      <NameCon UId="28" Name="en" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="21" />
+      <NameCon UId="28" Name="machineReady" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="22" />
+      <NameCon UId="28" Name="movingZ" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="23" />
+      <NameCon UId="28" Name="movingX" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="24" />
+      <NameCon UId="28" Name="itemGrabbed" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="30" />
+      <NameCon UId="28" Name="start" />
+    </Wire>
+    <Wire UId="38">
+      <OpenCon UId="31" />
+      <NameCon UId="28" Name="done" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="28" Name="moveX" />
+      <IdentCon UId="25" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="28" Name="moveZ" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="28" Name="grabItem" />
+      <IdentCon UId="27" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="30" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="31" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

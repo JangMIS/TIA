@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V16" />
+  <DocumentInfo>
+    <Created>2024-06-24T15:42:28.6855013Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <InstanceOfName>FB_Main</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v4">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="FB_Conveyor_Entry" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_Weight" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_WheelSorter_Instance" Datatype="&quot;FB_WheelSorter&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="photoeyeEntry" Datatype="Bool" /><Member Name="photoeyeLeft" Datatype="Bool" /><Member Name="photoeyeRight" Datatype="Bool" /><Member Name="photoeyeStraight" Datatype="Bool" /><Member Name="machineReady" Datatype="Bool" /></Section><Section Name="Output"><Member Name="beltConveyorLeft" Datatype="Bool" /><Member Name="beltConveyorRight" Datatype="Bool" /><Member Name="beltConveyorStraight" Datatype="Bool" /><Member Name="wheelSorterRight" Datatype="Bool" /><Member Name="wheelSorterStraight" Datatype="Bool" /><Member Name="wheelSorterLeft" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /><Member Name="heavyLoad" Datatype="Bool" /><Member Name="lightLoad" Datatype="Bool" /><Member Name="mediumLoad" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..20] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_Left" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_Straight" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_Right" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_PickAndPlace_Instance" Datatype="&quot;FB_PickAndPlace&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machineReady" Datatype="Bool" /><Member Name="movingZ" Datatype="Bool" /><Member Name="movingX" Datatype="Bool" /><Member Name="itemGrabbed" Datatype="Bool" /></Section><Section Name="Output"><Member Name="moveX" Datatype="Bool" /><Member Name="moveZ" Datatype="Bool" /><Member Name="grabItem" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..20] of Bool" /></Section></Sections></Member>
+    <Member Name="FB_Conveyor_4belt" Datatype="&quot;FB_Conveyor&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="machine ready" Datatype="Bool" /><Member Name="photoeye" Datatype="Bool" /></Section><Section Name="Output"><Member Name="forward" Datatype="Bool" /><Member Name="counter" Datatype="Int" /></Section><Section Name="InOut"><Member Name="start" Datatype="Bool" /><Member Name="done" Datatype="Bool" /></Section><Section Name="Static"><Member Name="step" Datatype="Array[0..19] of Bool" /></Section></Sections></Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_Main</Name>
+      <Number>2</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>
